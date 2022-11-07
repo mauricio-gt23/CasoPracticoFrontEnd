@@ -1,0 +1,235 @@
+.signup-bg {
+    background-image: url('./../../../../assets/Fondo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container > div {
+    margin: 5vh 0;
+    width: 70%;
+    border-radius: 30px;
+    border: 0;
+    background-color: aliceblue;
+    box-shadow: 1px 1px 13px 3px #458d2e, -1px -1px 13px 3px #458d2e;
+}
+
+.title {
+    margin: 0;
+    font-family: 'Bree Serif', serif;
+    font-weight: bolder;
+    font-size: calc(0.85rem + 1.5vh);
+}
+
+.form-signup {
+    margin: 2.5vh 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2vh;
+}
+
+.pl-pr {
+    padding: 0 calc(1rem + 5%);
+}
+
+.form-signup__label {
+    margin: 0;
+    font-family: 'Alata', sans-serif;
+    font-size: calc(1.01rem + 0.2vw);
+    font-weight: bold;
+    color: black;
+}
+
+.icon-span {
+    font-size: calc(1.2rem + 1vh);
+    position: absolute; 
+    display: block; 
+    left: .20rem; 
+    top: 0.55rem;
+    user-select: none;
+    color: black;
+}
+
+.button-vis {
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    position: absolute; 
+    display: block; 
+    right: .25rem;
+    top: 0.6rem;
+}
+
+hr {
+    margin: 0;
+    width: 0.1rem;
+    height: 100%;
+    display: block;
+    position: absolute;
+    left: calc(1.8rem + 0.5vw);
+    border-width:0;
+    background-color: black;
+}
+
+.form-signup__input-basic {
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 0.5rem 0.5rem;
+    font-family: 'Bree Serif', serif;
+    font-size: calc(0.9rem + 0.2vw);
+}
+
+.form-signup__input-medium {
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 0.5rem calc(0.5rem + 1vw);
+    padding-left: calc(2rem + 1vw);
+    font-family: 'Bree Serif', serif;
+    font-size: calc(0.9rem + 0.2vw);
+}
+
+.form-signup__input-hard {
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 0.5rem calc(2rem + 1vw);
+    font-family: 'Bree Serif', serif;
+    font-size: calc(0.9rem + 0.2vw);
+}
+
+.form-signup__span {
+    color: rgb(221, 35, 35);
+    font-family: 'Figtree', sans-serif;
+    font-size: calc(0.80rem + 0.2vw);
+    font-weight: bold;
+}
+
+.form-span-alert {
+    margin: 0;
+    color: rgb(221, 35, 35);
+    font-family: 'Figtree', sans-serif;
+    font-size: calc(0.80rem + 0.3vw);
+    font-weight: bold;
+    text-align: center;
+}
+
+.form-signup__button {
+    margin-top: 1vh;
+    padding: calc(0.1rem + 0.5vh) calc(0.5rem + 1vw);
+    border: 0;
+    border-radius: 8px;
+    color: black;
+    border: 2px solid #90730C;
+    background-color: #C29B0C;
+    font-family: 'Bree Serif', serif;
+    font-weight: bold;
+    font-size: calc(0.75rem + 0.5vw);
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 997;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0008;
+    opacity: 1;
+}
+
+.modal-container {
+    position: relative;
+    width: 70%;
+    height: 30vh;
+    border: 4px solid #DD9C31;
+    border-radius: 1rem;
+    padding: 2rem;
+    background-color: rgb(150, 145, 145);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    line-height: 1.2;
+}
+
+.modal-close {
+    font-size: calc(0.8rem + 1vw);
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 2rem;
+    height: 2rem;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    border-radius: 25%;
+    background-color: #B3802B;
+    transition: background-color 300ms linear, transform 300ms ease-in-out;
+}
+
+.modal-close:hover {
+    transform: scale(1.2);
+}
+
+.modal__title {
+    color: #EAB793;
+    font-family: 'Raleway', sans-serif;
+    font-size: calc(1.05rem + 1.05vw);
+}
+
+.modal__subtitle {
+    font-family: 'Figtree', sans-serif;
+    font-size: calc(0.8rem + 1.05vw);
+    font-weight: 200;
+}
+
+
+@media screen and (min-width: 30em){
+    .container > div {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 48em){
+    .container > div {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 62em){
+    .container > div {
+        width: 60%;
+    }
+
+    .modal-container {
+        width: 30%;
+    }
+
+    .modal-close {
+        width: 3.2rem;
+        height: 3.2rem;
+    }
+}
+
+@media screen and (min-width: 75em){
+    .container > div {
+        width: 60%;
+    }
+}

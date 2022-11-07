@@ -1,0 +1,164 @@
+.login-bg {
+    background-image: url('./../../../../assets/Fondo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container > div {
+    width: 70%;
+    border-radius: 8%;
+    border: 0;
+    background-color: aliceblue;
+    box-shadow: 1px 1px 13px 3px #590B8F, -1px -1px 13px 3px #590B8F;
+}
+
+.title {
+    margin: 0;
+    color: black;
+    font-family: 'Bree Serif', serif;
+    font-weight: bolder;
+    font-size: calc(0.85rem + 1.5vh);
+}
+
+.form-login {
+    margin: 2.5vh 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2vh;
+}
+
+.form-login > div {
+    width: 80%;
+}
+
+.form-login__label {
+    margin: 0;
+    font-family: 'Alata', sans-serif;
+    font-size: calc(1.01rem + 0.2vw);
+    font-weight: bold;
+    color: black;
+}
+
+.icon-span {
+    font-size: calc(1.2rem + 1vh);
+    position: absolute; 
+    display: block; 
+    left: .20rem; 
+    top: 0.50rem;
+    user-select: none;
+    color: black;
+}
+
+.button-vis {
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    position: absolute; 
+    display: block; 
+    right: .25rem;
+    top: 0.6rem;
+}
+
+hr {
+    margin: 0;
+    width: .1rem;
+    height: 100%;
+    display: block;
+    position: absolute;
+    left: calc(1.8rem + 0.5vw);
+    border-width:0;
+    background-color: black;
+}
+
+.form-login__input-username {
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 0.5rem calc(0.5rem + 1vw);
+    font-family: 'Bree Serif', serif;
+    font-size: calc(0.9rem + 0.2vw);
+}
+
+.form-login__input-password {
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 0.5rem calc(2rem + 1vw);
+    font-family: 'Bree Serif', serif;
+    font-size: calc(0.9rem + 0.2vw);
+}
+
+.form-login__span {
+    color: rgb(221, 35, 35);
+    font-family: 'Figtree', sans-serif;
+    font-size: calc(0.80rem + 0.2vw);
+    font-weight: bold;
+}
+
+.form-span-alert {
+    margin: 0;
+    color: rgb(221, 35, 35);
+    font-family: 'Figtree', sans-serif;
+    font-size: calc(0.80rem + 0.3vw);
+    font-weight: bold;
+    text-align: center;
+}
+
+.form-login__button {
+    padding: calc(0.1rem + 0.5vh) calc(0.5rem + 1vw);
+    border: 0;
+    border-radius: 8px;
+    color: black;
+    border: 2px solid #90730C;
+    background-color: #C29B0C;
+    font-family: 'Bree Serif', serif;
+    font-weight: bold;
+    font-size: calc(0.75rem + 0.5vw);
+}
+
+.form-p {
+    font-family: 'Figtree', sans-serif;
+    font-size: calc(0.8rem + 0.4vw);
+}
+
+.form-p a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Bree Serif', serif;
+}
+
+@media screen and (min-width: 30em){
+    .container > div {
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 48em){
+    .container > div {
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 62em){
+    .container > div {
+        width: 30%;
+    }
+}
+
+@media screen and (min-width: 75em){
+    .container > div {
+        width: 29%;
+    }
+}

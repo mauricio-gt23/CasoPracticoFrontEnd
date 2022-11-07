@@ -1,0 +1,40 @@
+<div>
+    <h2 class="title">Tabla "Entidad" : </h2>
+    <div>
+        <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 dem-table">    
+          
+            <!-- Id Column -->
+            <ng-container matColumnDef="id">
+              <th mat-header-cell *matHeaderCellDef> N° </th>
+              <td mat-cell *matCellDef="let element"> {{ element.id }} </td>
+            </ng-container>
+          
+            <!-- Nombre Comercial Column -->
+            <ng-container matColumnDef="businessName">
+              <th mat-header-cell *matHeaderCellDef> Razon Social </th>
+              <td mat-cell *matCellDef="let element"> {{ element.razonSocial }} </td>
+            </ng-container>
+          
+            <!-- Estado Column -->
+            <ng-container matColumnDef="state">
+              <th mat-header-cell *matHeaderCellDef> Estado </th>
+              <td mat-cell *matCellDef="let element" class="alert alert-danger" role="alert"> {{ element.estado | status }} </td>
+            </ng-container>
+
+            <!-- Telefono Column -->
+            <ng-container matColumnDef="documentId">
+              <th mat-header-cell *matHeaderCellDef> N° Id Documento </th>
+              <td mat-cell *matCellDef="let element"> {{ element.tipoDocumentoId }} </td>
+            </ng-container>
+
+            <!-- Telefono Column -->
+            <ng-container matColumnDef="taxpayerId">
+              <th mat-header-cell *matHeaderCellDef> N° Id Contribuyente </th>
+              <td mat-cell *matCellDef="let element"> {{ element.tipoContribuyenteId }} </td>
+            </ng-container>
+ 
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+          </table>
+    </div>
+</div>

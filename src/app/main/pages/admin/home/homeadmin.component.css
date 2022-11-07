@@ -1,0 +1,6 @@
+.hello__admin {
+    color: #590B8F;
+    font-size: calc(1.2rem + 1vw);
+    font-family: 'Raleway', sans-serif;
+    --animate-duration: 4s;
+}

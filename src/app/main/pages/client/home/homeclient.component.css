@@ -1,0 +1,10 @@
+.title {
+    font-size: calc(1.2rem + 1vw);
+    font-family: 'Raleway', sans-serif;
+}
+
+.dem-table {
+    width: 100%;
+    text-align: center;
+}
+  
